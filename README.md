@@ -114,7 +114,7 @@ for i in range(500000):
 plt.plot(costs)
 ```
 ## Resulting Weights
-The testing algorithm spits out the 3 optimized weights: `w1, w2, w3`
+The testing algorithm spits out the 2 optimized weights and buffer terms: `w1, w2, b`
 
 ```python
 print("w1 = ", w1, " | w2 = ", w2, " | b = ", b)
