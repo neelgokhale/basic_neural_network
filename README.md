@@ -1,5 +1,5 @@
-# Basic Neural Network
-Basic neural network programmed in python to understand nodes, weights, gradient descent and back propagation. Designed using python (JupyterLab notebook)
+# Basic Neural Network: Flower Identification
+Basic neural network programmed in python to understand nodes, weights, gradient descent and back propagation. Designed using python (JupyterLab notebook). The data set involves petal dimensions of 2 species of flowers, colored red and blue.
 
 ## Imports and Setup
 
