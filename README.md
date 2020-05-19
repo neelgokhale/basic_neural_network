@@ -1,6 +1,8 @@
 # Basic Neural Network
 Basic neural network programmed in python to understand nodes, weights, gradient descent and back propagation. Designed using python (JupyterLab notebook)
 
+## Imports and Setup
+
 ```python
 %matplotlib inline
 ```
@@ -10,11 +12,11 @@ Basic neural network programmed in python to understand nodes, weights, gradient
 from matplotlib import pyplot as plt
 import numpy as np
 ```
-
+## Displaying Prelim Dataset
+This matrix defines measurements of flower data
+`[petal_length, petal_width, color]`
 
 ```python
-# defining flower data [length, width, color]
-# color -> [Red, Blue] => [1, 0]
 
 data = [[3, 1.5, 1], 
         [2, 1, 0],
@@ -26,7 +28,7 @@ data = [[3, 1.5, 1],
         [1, 1, 0]]
 
 ```
-
+## Defining Sigmoid Function and Derivative
 
 ```python
 def sigmoid(x):
@@ -34,10 +36,9 @@ def sigmoid(x):
 def dir_sigmoid(x):
     return sigmoid(x)*(1-sigmoid(x))
 ```
-
+## Graphing Sigmoid Function and Derivative
 
 ```python
-# Defining sigmoid functions
 
 T = np.linspace(-10, 10, 100)
 Y = sigmoid(T)
@@ -57,7 +58,7 @@ plt.legend(loc="upper left")
 
 ![png](output_4_1.png)
 
-
+## Scatter Plot of Data
 
 ```python
 # scatter data
@@ -75,10 +76,9 @@ for i in range(len(data)):
 
 ![png](output_5_0.png)
 
-
+## Cost Function and Training Loop
 
 ```python
-# training loop
 
 w1 = np.random.randn()
 w2 = np.random.randn()
@@ -113,18 +113,19 @@ for i in range(500000):
     
 plt.plot(costs)
 ```
-
+## Resulting Weights
+The testing algorithm spits out the 3 optimized weights: `W1, W2, W3`
 
 ```python
 print("w1 = ", w1, " | w2 = ", w2, " | b = ", b)
+
 ```
 
     w1 =  18.206320120701324  | w2 =  8.93289796400363  | b =  -65.49513657310935
     
-
+## Predictions
 
 ```python
-# seeing model predictions
 
 for i in range(len(data)):
     point = data[i]
@@ -151,10 +152,9 @@ for i in range(len(data)):
     [1, 1, 0]
     prediction: 2.199055813355231e-17
     
-
+## Checking with Mystery Value
 
 ```python
-# checking with mystery value
 
 plt.grid()
 plt.axis([0, 6, 0, 6])
