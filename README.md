@@ -56,7 +56,7 @@ plt.legend(loc="upper left")
 
 
 
-![png](output_4_1.png)
+![png](/img/output_4_1.png)
 
 ## Scatter Plot of Data
 
@@ -74,7 +74,7 @@ for i in range(len(data)):
 ```
 
 
-![png](output_5_0.png)
+![png](/img/output_5_0.png)
 
 ## Cost Function and Training Loop
 
@@ -185,7 +185,7 @@ else:
     
 
 
-![png](output_9_1.png)
+![png](/img/output_9_1.png)
 
 
 ```python
