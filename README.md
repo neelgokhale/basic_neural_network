@@ -114,7 +114,7 @@ for i in range(500000):
 plt.plot(costs)
 ```
 ## Resulting Weights
-The testing algorithm spits out the 3 optimized weights: `W1, W2, W3`
+The testing algorithm spits out the 3 optimized weights: `w1, w2, w3`
 
 ```python
 print("w1 = ", w1, " | w2 = ", w2, " | b = ", b)
@@ -153,6 +153,7 @@ for i in range(len(data)):
     prediction: 2.199055813355231e-17
     
 ## Checking with Mystery Value
+Mystery value `mystery_flower` is plotted on scatter plot for reference as a black square marker.
 
 ```python
 
@@ -185,7 +186,6 @@ else:
 
 
 ![png](output_9_1.png)
-
 
 
 ```python
